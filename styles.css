@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-container button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+li button {
+  float: right;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  .container {
+    max-width: 90%; /* Adjusted for smaller screens */
+  }
+
+  .input-container {
+    flex-direction: column; /* Stack input and button vertically */
+  }
+
+  .input-container input {
+    margin-bottom: 10px; /* Add spacing between input and button */
+  }
+
+  li button {
+    float: none; /* Center buttons in smaller screens */
+    margin-top: 5px; /* Add spacing between buttons */
+  }
+}
